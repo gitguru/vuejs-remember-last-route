@@ -1,19 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <NavBar v-if="isLoggedIn" />
+    <PubNavBar v-if="!isLoggedIn" />
+    <router-view />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// @ is an alias to /src
+import NavBar from "@/components/NavBar.vue";
+import PubNavBar from "@/components/PubNavBar.vue";
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    NavBar,
+    PubNavBar,    
+  },
+  computed: {
+    isLoggedIn: function() {
+      return this.$store.getters.isAuthenticated;
+    },
+  },
+};
 </script>
 
 <style>
@@ -23,6 +30,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
