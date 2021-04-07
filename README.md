@@ -32,7 +32,7 @@ npm run lint
 ```
 
 ### Customize configuration
-https://cli.vuejs.org/config/
-https://cli.vuejs.org/guide/installation.html
-https://cli.vuejs.org/guide/creating-a-project.html#pulling-2-x-templates-legacy
-https://cli.vuejs.org/config/#global-cli-config
+* https://cli.vuejs.org/config/
+* https://cli.vuejs.org/guide/installation.html
+* https://cli.vuejs.org/guide/creating-a-project.html#pulling-2-x-templates-legacy
+* https://cli.vuejs.org/config/#global-cli-config
