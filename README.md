@@ -36,3 +36,8 @@ npm run lint
 * https://cli.vuejs.org/guide/installation.html
 * https://cli.vuejs.org/guide/creating-a-project.html#pulling-2-x-templates-legacy
 * https://cli.vuejs.org/config/#global-cli-config
+
+### Based on a compilation of examples taken from these sites. 
+* https://auth0.com/blog/beginner-vuejs-tutorial-with-user-login/
+* https://www.smashingmagazine.com/2020/10/authentication-in-vue-js/
+* https://css-tricks.com/storing-and-using-the-last-known-route-in-vue/
